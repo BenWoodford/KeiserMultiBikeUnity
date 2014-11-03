@@ -67,7 +67,6 @@ namespace KeiserDLL
             socket.Bind (ipEndPoint);
             socket.SetSocketOption (SocketOptionLevel.IP, SocketOptionName.AddMembership, new MulticastOption (IPAddress.Parse (ipAdress)));
             byte[] receivedData = new byte[1024];
-            Console.WriteLine ("Bound port");
 
             int cycleBikes = 0;
 
