@@ -37,3 +37,6 @@ BuildOutput/*
 *.orig
 *.orig.meta
 logs/
+
+*.mdb
+*.mdb.meta
