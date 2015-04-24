@@ -8,6 +8,6 @@ public class BikeCube : MonoBehaviour
     
     public void BikeDidUpdate ()
     {
-        rigidbody.AddForce (new Vector3 (bike.bikeData.rpm * rpmMultiplier * Time.deltaTime, 0, 0), ForceMode.VelocityChange);
+        GetComponent<Rigidbody>().AddForce (new Vector3 (bike.bikeData.rpm * rpmMultiplier * Time.deltaTime, 0, 0), ForceMode.VelocityChange);
     }
 }
